@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    ". top ."
+    ". canvas ."
+    ". bottom .";
+}
+
+.canvas-container {
+  grid-area: canvas;
+  justify-self: center;
+  align-self: center;
+
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  min-width: 400px;
+  min-height: 400px;
+
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.top-container {
+  grid-area: top;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.bottom-container {
+  grid-area: bottom;
+  justify-self: center;
+}
